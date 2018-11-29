@@ -1,0 +1,52 @@
+
+<% include ./partials/header %>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<br>
+
+<div class="w3-container">
+  
+  <form class="form-inline" action="/show" method="GET">
+      <div class="form-group has-feedback">
+        <label for="search"></label>
+        <input class="form-control" type="text" name="search" placeholder="Search Member" autocomplete="off" />
+        <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+      </div>
+      <a href="/show" style="text-decoration-style: none;">show all</a>
+    </form>
+
+
+
+  <table class="w3-table w3-striped">
+    <tr>
+      <th> Name</th>
+      <th> Type</th>
+      <th>count</th>
+    
+    </tr>
+    <% data.forEach(data => {%>
+    <tr>
+    
+                   
+           <td><%= data.username %></td>
+           <td><%= data.type %></td>
+           <td><%= data.count %></td>
+           
+ 
+    </tr>
+       <% })%>
+    
+  </table>
+</div>
+
+
+
+
+
+
+
+
+
+  <% include ./partials/footer %>

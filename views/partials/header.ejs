@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="YelpCamp is a hands-on project from the Udemy course: The Web Developer Bootcamp by Colt Steele">
+  <title>DHIKR</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="icon" href="/images/favicon.ico" />
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">DHIKR</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+<!--           <li><a href="/">Home</a></li>
+ -->        <!-- <li><a href="/imagegallery">Image Gallery</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+        <li><a href="#myJoin" data-toggle="modal">Join Us</a></li>
+ -->
+        
+            <li class="<%= typeof page !== 'undefined' && page === 'login' ? 'active' : '' %>"><a href="/login">Login</a></li>
+          <!--   <li class="<%= typeof page !== 'undefined' && page === 'register' ? 'active' : '' %>"><a href="/register">Sign Up</a></li> -->
+    
+              
+
+
+           
+            <li><a href="/logout">Logout</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+  </div>
+  <div class="container">
+

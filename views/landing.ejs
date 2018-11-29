@@ -1,0 +1,52 @@
+<% include ./partials/header %>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div class="row">
+  <h1 style="text-align: center">Enter your count</h1>
+  <div class="rwd-form">
+    <form action="/joinus" method="post">
+      <div class="form-group">
+        <label for="username">Name</label>
+        <input class="form-control" type="dr" name="username" autocomplete="off" required />
+      </div>
+      <label for="username">Type</label>
+      <div class="form-group">
+        <select class="form-control" name="type2">
+    <option  value="type1">type1</option>
+    <option value="type2">type2</option>
+    <option value="type3">type3</option>
+    <option value="type4">type4</option>
+  </select>
+      </div>
+      <div class="form-group">
+        <label for="firstName">Count</label>
+        <input class="form-control" type="text"  id = "count1" name="count" autocomplete="off" required placeholder="100" />
+      </div>
+      <div class="form-group">
+        <label for="firstName">Enter Count again</label>
+        <input class="form-control" type="text"  id="count2" name="count1" autocomplete="off" required placeholder="100" />
+        <span id='message'></span>
+      </div>
+
+      <div class="form-group">
+        <button class="btn btn-md btn-primary btn-block">Submit</button>
+      </div>
+      <hr>
+      <a href="/campgrounds">Back</a>
+      <hr>
+      
+
+    </form>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $('#count1, #count2').on('keyup', function () {
+  if ($('#count1').val() == $('#count2').val()) {
+    $('#message').html('Matching').css('color', 'green');
+  } else 
+    $('#message').html('Not Matching').css('color', 'red');
+});
+</script>
+
+
+<% include ./partials/footer %>

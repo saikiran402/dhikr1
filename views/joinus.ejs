@@ -1,0 +1,36 @@
+<% include ./partials/header %>
+
+<div class="row">
+  <h1 style="text-align: center">Join Us</h1>
+  <div class="rwd-form">
+    <form action="/joinus" method="post">
+      <div class="form-group">
+        <label for="username">Name</label>
+        <input class="form-control" type="text" name="username" autocomplete="off" required />
+      </div>
+      <div class="form-group">
+        <label for="password">PIN</label>
+        <input class="form-control" type="text" name="PIN" autocomplete="off" required placeholder="221....." />
+      </div>
+      <div class="form-group">
+        <label for="firstName">Year</label>
+        <input class="form-control" type="text" name="year" autocomplete="off" required placeholder="2" />
+      </div>
+      <div class="form-group">
+        <label for="username">Email</label>
+        <input class="form-control" type="email" name="email" autocomplete="off" required />
+      </div>
+      
+      <div class="form-group">
+        <button class="btn btn-md btn-primary btn-block">Join</button>
+      </div>
+      <hr>
+      <a href="/campgrounds">Back</a>
+      <hr>
+      
+    </form>
+  </div>
+</div>
+
+
+<% include ./partials/footer %>
