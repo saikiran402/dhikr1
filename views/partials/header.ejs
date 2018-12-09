@@ -6,7 +6,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="description" content="YelpCamp is a hands-on project from the Udemy course: The Web Developer Bootcamp by Colt Steele">
   <title>DHIKR</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="icon" href="/images/favicon.ico" />
   <link rel="stylesheet" href="/styles/main.css">
 </head>
@@ -48,6 +48,18 @@
     </div>
   </nav>
  
+  </div>
+  <div class="container">
+    <% if (error && error.length > 0) {%>
+      <div class="alert alert-danger" role="alert">
+        <%= error %>
+      </div>
+    <% } %>
+    <% if (success && success.length > 0) {%>
+      <div class="alert alert-success" role="alert">
+        <%= success %>
+      </div>
+    <% } %>
   </div>
   <div class="container">
 
